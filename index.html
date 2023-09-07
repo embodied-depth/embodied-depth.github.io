@@ -522,6 +522,27 @@ pre {
         </p>
     </div>
 
+
+    <div class="section">
+        <h2>Method Overview</h2>
+        <hr>
+        <p>
+        Our approach to embodied depth prediction gathers and maintains a buffer of RGB images from the environment. A set of contiguous data including images and their associated ego-motion are sampled from the replay buffer and used to generate the depth prediction with Embodied Depth Network that is trained using photometric loss. More images are gathered with an active policy using a combination of frontier exploration and depth-inconsistency between predicted depth at nearby RGB observations.
+        </p>
+
+        <section id="method-image">
+            <center>
+                <figure>
+                    <a>
+                        <img class="centered" width="100%" src="img/method9.png"> 
+                    </a>
+                        <br>
+                </figure>
+    
+            </center>
+        </section>
+
+
     <div class="section">
         <h2>Data Collection with Active Policy</h2>
         <hr>
